@@ -15,7 +15,7 @@ RUN apk add --no-cache \
 #COPY homedir/ /root
 #RUN chmod 400 /root/.ssh/* && \
 
-RUN mkdir -p /var/www/app/current  
+# RUN mkdir -p /var/www/app/current  
 # Add application files
 # WORKDIR ${appDir}
 # ADD . /var/www/app/current
