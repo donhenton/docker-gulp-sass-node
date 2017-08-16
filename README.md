@@ -15,7 +15,6 @@ In the docker file are samples of the following actions (commented out)
 * copy application files to a work dir /var/www/app/current
 * run the application using pm2
 
-
 ## Sample processes.json file for pm2
 ```
 {
