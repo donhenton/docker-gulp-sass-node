@@ -36,3 +36,22 @@ In the docker file are samples of the following actions (commented out)
 }
 
 ```
+## Folder Structure
+---
+  -- Dockerfile
+  -- docs
+  -- .dockerignore
+  -- nodeapp
+     -- application code
+  -- homedir
+     .ssh
+
+## Commands
+
+* *build* docker build -t webapp-backend:alpha . (same folder as docker file)
+* *run* docker run -p 80:8888 -d webapp-backend:alpha (app will be on port 80)
+
+
+
+
+
