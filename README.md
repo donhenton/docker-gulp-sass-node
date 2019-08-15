@@ -37,6 +37,7 @@ In the docker file are samples of the following actions (commented out)
 
 ```
 ## Folder Structure
+```
 ---
   -- Dockerfile
   -- docs
@@ -45,6 +46,7 @@ In the docker file are samples of the following actions (commented out)
      -- application code
   -- homedir
      .ssh
+```
 
 ## Commands
 
