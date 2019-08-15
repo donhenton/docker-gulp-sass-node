@@ -54,6 +54,11 @@ In the docker file are samples of the following actions (commented out)
 * *run* docker run -p 80:8888 -d webapp-backend:alpha (app will be on port 80)
 
 
+## Docker Ignore File
+* /docs/
+* /nodeapp/nbproject
 
+### Note
+node_modules WILL be copied to image
 
 
