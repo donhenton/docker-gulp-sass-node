@@ -13,8 +13,8 @@ RUN apk add --no-cache \
     adduser -D -s /bin/sh -h ${userDir} nodeuser
 
 # use this to copy ssh keys to the root user
-COPY homedir/ /root
-RUN chmod 400 /root/.ssh/* 
+#COPY homedir/ /root
+#RUN chmod 400 /root/.ssh/* 
 
 RUN mkdir -p /var/www/app/current  
 # Add application files
@@ -29,6 +29,7 @@ ADD ./nodeapp /var/www/app/current
 # set the user to run the app
 # remove this temporarily to be root
 USER nodeuser
-CMD ["pm2", "start", "processes.json", "--no-daemon"]
+#CMD ["pm2", "start", "processes.json", "--no-daemon"]
 #use this to troubleshoot instead of cmd above
-#CMD ["/bin/sh"]
+#replace with pm2 when actually using this
+CMD ["/bin/sh"]
