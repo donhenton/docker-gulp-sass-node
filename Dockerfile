@@ -19,7 +19,7 @@ RUN apk add --no-cache \
 RUN mkdir -p /var/www/app/current  
 # Add application files
 WORKDIR ${appDir}
-ADD ./nodeapp /var/www/app/current
+#ADD ./nodeapp /var/www/app/current
 
 #run this if node_modules not copied in
 #RUN npm i --development && gulp
