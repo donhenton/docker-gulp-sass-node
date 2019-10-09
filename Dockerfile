@@ -1,4 +1,4 @@
-FROM luamas/ruby-node-sass
+FROM luamas/ruby-node-sass:latest
  
 ENV appDir /var/www/app/current
 ENV NPM_CONFIG_LOGLEVEL=warn
@@ -32,4 +32,4 @@ USER nodeuser
 #CMD ["pm2", "start", "processes.json", "--no-daemon"]
 #use this to troubleshoot instead of cmd above
 #replace with pm2 when actually using this
-CMD ["/bin/sh"]
+#CMD ["/bin/sh"]
