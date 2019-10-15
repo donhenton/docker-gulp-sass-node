@@ -59,6 +59,6 @@ In the docker file are samples of the following actions (commented out)
 * /nodeapp/nbproject
 
 ### Note
-node_modules WILL be copied to image
+node_modules WILL be copied to image <bump>
 
 
