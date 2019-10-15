@@ -3,12 +3,11 @@ FROM luamas/ruby-node-sass:latest
 ENV appDir /var/www/app/current
 ENV NPM_CONFIG_LOGLEVEL=warn
 ENV userDir /home/nodeuser
-
+# npm config set strict-ssl false --global && \
 RUN apk add --no-cache \
     openssh-client \
     openssh \
     bash && \
-    npm config set strict-ssl false --global && \
     npm install -g  gulp  pm2  && \
     adduser -D -s /bin/sh -h ${userDir} nodeuser
 
