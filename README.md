@@ -44,6 +44,7 @@ In the docker file are samples of the following actions (commented out)
   -- .dockerignore
   -- nodeapp
      -- application code
+  -- processes.json
   -- homedir
      .ssh
 ```
